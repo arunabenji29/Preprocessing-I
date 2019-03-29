@@ -1,1 +1,357 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin: 30px 0;
+}
+header h1 {
+  width: 49.5%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  font-size: 20px;
+  color: black;
+  font-family: 'Cousine', sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.my-name {
+  font-size: 45px;
+}
+section {
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+section .image {
+  margin: 0 5%;
+  width: 30%;
+  height: 60%;
+}
+section .image img {
+  width: 100%;
+  height: auto;
+}
+section p {
+  font-size: 20px;
+  height: auto;
+  margin: 0 5%;
+  line-height: 1.25;
+}
+section button {
+  border-radius: 10px;
+  width: 252px;
+  height: 55px;
+  margin: 0 5%;
+  font-size: 30px;
+  background-color: darkgray;
+  color: white;
+}
+.skills-content {
+  height: 270px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.left-content {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.left-content p {
+  margin: 0px;
+}
+.left-content-1 {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.left-content-1 p {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  height: 40px;
+  font-size: 30px;
+}
+h3 {
+  height: 40px;
+  font-size: 25px;
+}
+.languages {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-bottom: 0px;
+  height: 190px;
+}
+.languages div {
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-content {
+  height: 450px;
+  background-color: white;
+  font-size: 20px;
+}
+.work-content h2 {
+  border-bottom: 1px solid lightgray;
+}
+.work-content-1 div {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.work-content-1 div p {
+  width: 197px;
+  margin: 0;
+  padding: 0px;
+}
+.work-1 {
+  background-color: lightgray;
+}
+.st-col {
+  padding-left: 10px;
+}
+footer p {
+  background-color: lightgray;
+  font-size: 20px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .header-content {
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .header-content h1 {
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-top: 80px;
+    border-bottom: 1px solid lightgray;
+  }
+  .header-content nav {
+    width: 100%;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+  }
+  .header-content nav a {
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+  }
+  .middle-content {
+    height: 1000px;
+  }
+  .middle-content .image {
+    margin: 0 10%;
+    width: 80%;
+    height: 56%;
+  }
+  .middle-content .my-name {
+    order: -1;
+  }
+  .middle-content button {
+    margin: 0 20%;
+  }
+  .skills-content {
+    flex-direction: column;
+    padding: 0 20%;
+    margin-bottom: 20px;
+  }
+  .skills-content .left-content {
+    width: 79%;
+    margin-bottom: 20px;
+  }
+  .skills-content .left-content h2 {
+    margin-bottom: 10px;
+  }
+  .skills-content .left-content-1 {
+    width: 79%;
+  }
+  .st-col {
+    display: none;
+  }
+  .st-col-1 {
+    display: none;
+  }
+}
